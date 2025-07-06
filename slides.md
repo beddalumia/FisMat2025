@@ -37,7 +37,7 @@ neversink_slug: Kristina Armitage for Quanta Magazine
 
 Many-body entanglement has proven to
 
-<v-clicks at="+1" class="ns-c-fader">
+<v-clicks at="+1">
 
 - be a central tool in statistical physics
 - mark states of high quantum complexity
@@ -51,7 +51,7 @@ It is also expected to be a **resource for quantum technologies**, provided that
 
 </v-clicks>
 
-<v-clicks at="+1" class="ns-c-fader">
+<v-clicks at="+1">
 
 - it is operationally accessible
 - it goes beyond classical simulation
@@ -83,16 +83,16 @@ layout: default
 
   </v-clicks>
 
-<!-- <div class="neversink-sky-light-scheme ns-c-bind-scheme"> 
-&nbsp; Removing trivial entanglement from charge fluctuations: Charge Super-Selection Rule (N-SSR) 
-</div>  -->
+
 <hr>    
 
-<kbd> <sup>1</sup> Wick _et al._, *The Intrinsic Parity of Elementary Particles*, Physical Review **88**, 101 (1952) </kbd>    
-<kbd> <sup>2</sup> Ding _et al._, _Physical entanglement between localized orbitals_, Quantum Sci. and Tech. **9**, 015005 (2023) </kbd>    
-<kbd> <sup>3</sup> Friis, _Reasonable fermionic quantum information theories require relativity_, New J. Phys. **18**, 033014 (2016) </kbd>     
-<kbd> <sup>4</sup> Szalay _et al._, _Fermionic systems for quantum information people_, J. Phys. A: Math. Theor. **54**, 393001 (2021) </kbd>    
-<kbd> <sup>5</sup> Parez _et al._, _The Fate of Entanglement_, arXiv:2402.06677 (2024) [submitted to SciPost Physics]</kbd>
+
+<kbd v-click="1"> <sup>1</sup> Wick _et al._, *The Intrinsic Parity of Elementary Particles*, Physical Review **88**, 101 (1952) </kbd>  
+<kbd v-click="2"> <sup>2</sup> Ding _et al._, _Physical entanglement between localized orbitals_, Quantum Sci. and Tech. **9**, 015005 (2023) </kbd>  
+<kbd v-click="3"> <sup>3</sup> Friis, _Reasonable fermionic quantum information theories require relativity_, New J. Phys. **18**, 033014 (2016) </kbd>  
+<kbd v-click="3"> <sup>4</sup> Szalay _et al._, _Fermionic systems for quantum information people_, J. Phys. A: Math. Theor. **54**, 393001 (2021) </kbd>  
+<kbd v-click="3"> <sup>5</sup> Parez _et al._, _The Fate of Entanglement_, arXiv:2402.06677 (2024) [submitted to SciPost Physics]</kbd>
+
 
 ---
 layout: default
@@ -114,9 +114,13 @@ layout: default
 
 <v-clicks>
 
-- We expect a noninteracting metal to be very entangled in real space
-- But in momentum space it is trivially solved with Slater determinants!
-- At weak coupling it is well approximated by Hartree-Fock theory   
+- We expect a noninteracting metal to be very entangled in real space   
+- But in momentum space it is trivially solved with Slater determinants!   
+- At weak coupling it is well approximated by Hartree-Fock theory    
+
+</v-clicks>  
+
+<v-clicks>
 
 &nbsp;&nbsp;&nbsp; -> Such real-space entanglement can be **simulated with a trivial classical algorithm**   
 
@@ -138,7 +142,7 @@ align: l-lt-lt
 
 <div class="neversink-emerald-light-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Symmetries of a Hubbard dimer
+# &nbsp; Symmetries of a Hubbard dimer (in a mixed state)
 
 </div>
 
