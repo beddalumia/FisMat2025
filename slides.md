@@ -134,11 +134,9 @@ By removing charge superpositions, we may uncover nontrivial real-space entangle
 
 
 ---
-layout: two-cols-title
-align: l-lt-lt
+layout: default
 ---
 
-:: title ::
 
 <div class="neversink-emerald-light-scheme ns-c-bind-scheme"> 
 
@@ -146,14 +144,24 @@ align: l-lt-lt
 
 </div>
 
+<div class="grid w-full h-fit grid-cols-5 grid-rows-2 mt-10 mb-auto">
 
-:: left ::
+  <div class="grid-item grid-col-span-3"><img src="/images/dimer_rdm.svg" class="h-full w-auto mr-2" /></div>
+  
+  <v-clicks>
 
-![](/images/dimer_rdm.svg)
+  - 
 
-:: right ::
+  <div class="grid-item grid-col-span-2"><img src="/images/dimer_sym.svg" class="h-full w-auto ml-2 " /></div>
 
+  <v-clicks>
 
+  <div class="grid-item grid-col-span-3 text-center h-fit">
+
+  <kbd> Adapted from: Ding _et al._, J. Chem. Theory Comput. **17**, 1, 79–95 (2021) </kbd>
+
+  </div>
+</div>
 
 
 ---
@@ -163,8 +171,8 @@ title: Full Layout - 2 Col Fig
 
 This is an example of using unocss atomic classes to put two figures side by side.
 
-<div class="grid w-full h-fit grid-cols-2 grid-rows-2 mt-10 mb-auto">
-<div class="grid-item grid-col-span-1"><img src="/images/armitage_quanta.jpg" width=200/></div>
+<div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-10 mb-auto">
+<div class="grid-item grid-col-span-2"><img src="/images/armitage_quanta.jpg" width=200/></div>
 <div class="grid-item grid-col-span-1"><img src="/images/armitage_quanta.jpg" width=250/></div>
 <div class="grid-item grid-col-span-2 text-center h-fit">
 
