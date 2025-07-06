@@ -96,6 +96,7 @@ layout: default
 
 ---
 layout: default
+transition: slide-up
 ---
 
 # Why symmetry resolved?
@@ -127,7 +128,7 @@ layout: default
 &nbsp;&nbsp;&nbsp; -> ==Arguably not relevant for quantum technologies!==
 
 <AdmonitionType type="tip" title="Idea" width="450px" v-drag="[495,432,450,73]">
-By removing charge superpositions, we may uncover nontrivial real-space entanglement (if any!)
+Removing all charge superpositions, we may uncover nontrivial real-space entanglement (if any!)
 </AdmonitionType>
 
 </v-clicks>
@@ -135,26 +136,33 @@ By removing charge superpositions, we may uncover nontrivial real-space entangle
 
 ---
 layout: default
+transition: view-transition
 ---
 
 
-<div class="neversink-emerald-light-scheme ns-c-bind-scheme"> 
+<div class="neversink-emerald-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Symmetries of a Hubbard dimer (in a mixed state)
 
+# &nbsp; Symmetries of a Hubbard dimer (in a mixed state) 
 </div>
 
 <div class="grid w-full h-fit grid-cols-5 grid-rows-2 mt-10 mb-auto">
 
   <div class="grid-item grid-col-span-3"><img src="/images/dimer_rdm.svg" class="h-full w-auto mr-2" /></div>
   
-  <v-clicks>
-
-  - 
-
-  <div class="grid-item grid-col-span-2"><img src="/images/dimer_sym.svg" class="h-full w-auto ml-2 " /></div>
+  <div class="grid-item grid-col-span-2 ml-7"> 
 
   <v-clicks>
+
+  - The Hubbard model conserves the charge $N$ (and magnetization $m$)
+  - Of course this does not imply a local conservation of $n_i$ and $n_j$
+  - So in general we have quantum superpositions (off-diagonals)    
+    ==**->** entanglement between $i$ and $j$==
+    <div class="flex justify-center my-4">
+    <img src="/images/dimer_entangled.svg" width="200" />
+    </div>
+
+  </v-clicks></div>
 
   <div class="grid-item grid-col-span-3 text-center h-fit">
 
@@ -163,13 +171,109 @@ layout: default
   </div>
 </div>
 
+---
+
+
+<div class="neversink-emerald-scheme ns-c-bind-scheme"> 
+
+# &nbsp; Symmetries of a Hubbard dimer (in a mixed state) 
+
+</div>
+
+<div class="grid w-full h-fit grid-cols-4 grid-rows-1 mt-10 mb-auto">
+
+  <div class="grid-item grid-col-span-2 h-91"><img src="/images/dimer_sym.svg" class="h-full w-auto ml-5 " />   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <kbd> Rotated to highlight single-site symmetries  </kbd></div>
+
+  <div class="grid-item grid-col-span-2 ml-7"> 
+
+  - So in general we have quantum superpositions (off-diagonals)    
+    ==**->** entanglement between $i$ and $j$==
+    <div class="flex justify-left my-4 ml-17 ">
+    <img src="/images/dimer_entangled.svg" width="150" />
+    </div>  
+
+  <v-clicks depth=2>
+
+  - But **local** SSRs inhibit all quantum superpositions except:
+    - holon-doublon coupling   
+      ${\color{#F43F5E}\rho_{_\mathrm{hd}} \!\!=\, \mid \uparrow\downarrow \rangle\langle \bullet\!\mid \otimes \mid\!\bullet \rangle\langle \uparrow\downarrow \mid}$ 
+    - antiferro fluctuations  
+      ${\color{DeepSkyBlue}\rho_{_{\uparrow\downarrow}} \!\!=\, \mid \uparrow \rangle\langle \downarrow \mid \otimes \mid\downarrow\rangle\langle \uparrow\mid}$ 
+
+  </v-clicks></div>
+
+</div>
+
+---
+layout: section
+color: rose
+---
+
+# Results from Cluster-DMFT
+
+
+Across both the `interaction-driven` and `density-driven` Mott transitions
+
+---
+layout: full
+color: white
+title: Results
+---
+
+<div class="neversink-rose-scheme ns-c-bind-scheme"> 
+
+# &nbsp; Interaction-driven paramagnetic MIT
+
+</div>
+<br/>
+
+&nbsp; Cluster Dynamical Mean-Field Theory at zero temperature:
+
+<div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-5 mb-auto">
+<div v-click=1 class="grid-item grid-col-span-1"><img src="/images/cdmft.svg" /></div>
+<div v-click=2 class="grid-item grid-col-span-1"><img src="/images/cdmft_bath.svg" /></div>
+<div v-click=3 class="grid-item grid-col-span-1"><img src="/images/cdmft_ed.svg" /></div>
+
+<div v-click=1 class="grid-item grid-col-span-1 text-center h-fit m-3">   
+<hr/>
+
+We tile the lattice in real space
+
+</div> 
+
+<div v-click=2 class="grid-item grid-col-span-1 text-center h-fit m-3">   
+<hr/>
+
+Then map to an impurity model
+
+</div>
+
+<div v-click=3 class="grid-item grid-col-span-1 text-center h-fit m-3">   
+<hr/>
+
+&nbsp; Finally we discretize the bath
+
+</div>
+
+</div>
+
+
 
 ---
 layout: full
 title: Full Layout - 2 Col Fig
 ---
 
-This is an example of using unocss atomic classes to put two figures side by side.
+<div class="neversink-rose-scheme ns-c-bind-scheme"> 
+
+# &nbsp; Interaction-driven paramagnetic MIT
+
+</div>
+<br/>
+
+&nbsp; Cluster Dynamical Mean-Field Theory at zero temperature:
 
 <div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-10 mb-auto">
 <div class="grid-item grid-col-span-2"><img src="/images/armitage_quanta.jpg" width=200/></div>
@@ -179,25 +283,6 @@ This is an example of using unocss atomic classes to put two figures side by sid
 **Figure show this**: this is a two column figure
 
 </div>
-</div>
-
----
-layout: full
-title: Full Layout - 3 Col Fig
----
-
-This is an example of using unocss atomic classes to put three figures side by side.
-
-<div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-20 mb-auto">
-<div class="grid-item grid-col-span-1"><img src="/images/armitage_quanta.jpg" /></div>
-<div class="grid-item grid-col-span-1"><img src="/images/armitage_quanta.jpg" /></div>
-<div class="grid-item grid-col-span-1"><img src="/images/armitage_quanta.jpg" /></div>
-<div class="grid-item grid-col-span-3 text-center h-fit">
-
-**Figure show this**: this is a three column figure
-
-</div>
-
 </div>
 
 
