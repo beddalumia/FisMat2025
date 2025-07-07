@@ -386,13 +386,6 @@ transition: view-transition
 
 </v-click>
 
-<!-- <v-click>
-
-  Please read it, if interested! 🤠
-  <QRCode value="https://arxiv.org/html/2308.13706" :size="100" render-as='svg' class="float-right mr-7 mt-2"/>
-
-</v-click> -->
-
 
 ---
 layout: iframe-right
@@ -432,7 +425,7 @@ slide_info: false
 
 
   Please read it, if interested! 🤠
-  <QRCode value="https://arxiv.org/html/2308.13706" :size="100" render-as='svg' class="float-right mr-7 mt-2"/>
+  <QRCode value="https://arxiv.org/abs/2506.18709" :size="100" render-as='svg' class="float-right mr-7 mt-2"/>
 
 
 ---
