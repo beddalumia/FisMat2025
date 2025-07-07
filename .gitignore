@@ -6,5 +6,4 @@ dist
 .remote-assets
 components.d.ts
 pnpm-*.yaml
-netlify.toml
 vercel.json
