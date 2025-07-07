@@ -123,7 +123,7 @@ transition: slide-up
 
 <v-clicks>
 
-&nbsp;&nbsp;&nbsp; -> Such real-space entanglement can be **simulated with a trivial classical algorithm**   
+&nbsp;&nbsp;&nbsp; -> Such real-space entanglement can be **simulated with a simple classical algorithm**   
 
 &nbsp;&nbsp;&nbsp; -> ==Arguably not relevant for quantum technologies!==
 
@@ -209,6 +209,7 @@ transition: view-transition
 ---
 layout: section
 color: rose
+title: Results
 ---
 
 # Results from Cluster-DMFT
@@ -219,19 +220,16 @@ Across both the `interaction-driven` and `density-driven` Mott transitions
 ---
 layout: full
 color: white
-title: Results
+title: CDMFT
 ---
 
 <div class="neversink-rose-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Interaction-driven paramagnetic MIT
+# &nbsp; Cluster Dynamical Mean-Field Theory at zero temperature
 
 </div>
-<br/>
 
-&nbsp; Cluster Dynamical Mean-Field Theory at zero temperature:
-
-<div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-5 mb-auto">
+<div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-20 mb-auto">
 <div v-click=1 class="grid-item grid-col-span-1"><img src="/images/cdmft.svg" /></div>
 <div v-click=2 class="grid-item grid-col-span-1"><img src="/images/cdmft_bath.svg" /></div>
 <div v-click=3 class="grid-item grid-col-span-1"><img src="/images/cdmft_ed.svg" /></div>
@@ -260,10 +258,10 @@ Then map to an impurity model
 </div>
 
 
-
 ---
 layout: full
-title: Full Layout - 2 Col Fig
+title: MIT
+transition: slide-left
 ---
 
 <div class="neversink-rose-scheme ns-c-bind-scheme"> 
@@ -271,16 +269,24 @@ title: Full Layout - 2 Col Fig
 # &nbsp; Interaction-driven paramagnetic MIT
 
 </div>
-<br/>
 
-&nbsp; Cluster Dynamical Mean-Field Theory at zero temperature:
+<div class="grid w-full h-fit grid-cols-3 grid-rows-1 mt-7 mb-auto">
+<div class="grid-item grid-col-span-2 mb-3"><img src="/images/half_sym.svg" width=700/></div>
+<div class="grid-item grid-col-span-1 text-center">
+<v-click at=0>
 
-<div class="grid w-full h-fit grid-cols-3 grid-rows-2 mt-10 mb-auto">
-<div class="grid-item grid-col-span-2"><img src="/images/armitage_quanta.jpg" width=200/></div>
-<div class="grid-item grid-col-span-1"><img src="/images/armitage_quanta.jpg" width=250/></div>
+<img src="/images/4x2_ladder.svg" class="w-50 ml-15 mt-0.5" />
+<img src="/images/shells_inkscaped.svg" class="w-150 ml-3 mt-5 mb-5" />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <kbd> G.Bellomia _et al._, PRB **109**, 115104 </kbd>
+
+</v-click>
+</div>
 <div class="grid-item grid-col-span-2 text-center h-fit">
 
-**Figure show this**: this is a two column figure
+<hr/>
+
+Symmetry-resolved versus full entanglement between sites $\langle i j \rangle$
 
 </div>
 </div>
@@ -288,334 +294,149 @@ title: Full Layout - 2 Col Fig
 
 
 ---
-layout: credits
-color: navy
-speed: 1.0
-loop: true
+layout: full
+title: Doping
+transition: slide-up
 ---
 
-<div class="grid text-size-4 grid-cols-3 w-3/4 gap-y-10 auto-rows-min ml-auto mr-auto">
-<div class="grid-item text-center mr-0- col-span-3">
-  
-  This one has `speed: 4.0` and `loop: true` in the front matter
-</div>
-<div class="grid-item text-center mr-0- col-span-3">
-  <strong>Cast</strong><br> 
-  <span class="font-size-3 mt-0">(In order of appearance)</span>
-</div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Study 1</strong></div>
-<div class="grid-item col-span-2">Person 1 <i>as PhD student</i>&nbsp;<mdi-open-in-new class="font-size-3 mb-0.5" /><br/>Person 2 <i>as Co-PI</i>&nbsp;<mdi-open-in-new class="font-size-3 mb-0.5" /></div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Study 2</strong></div>
-<div class="grid-item col-span-2">Person 3 <i>as Postdoc</i>&nbsp;<mdi-open-in-new class="font-size-3 mb-0.5" /><br/>Person 4 <i>as Co-PI</i>&nbsp;<mdi-open-in-new class="font-size-3 mb-0.5" /></div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Experiments</strong></div>
-<div class="grid-item col-span-2">Smile 🫠</div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Funding</strong></div>
-<div class="grid-item col-span-2">National Science Foundation<br/>
-National Institute of Health</div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Slides</strong></div>
-<div class="grid-item col-span-2">
-Slidev<br/>
-Unocss<br/>
-Figma<br/>
-Vuejs<br/>
-Vite<br/>
-</div>
-<div class="grid-item col-span-3 text-center mt-180px mb-auto font-size-1.5rem"><strong>Questions?</strong></div>
+<div class="neversink-rose-scheme ns-c-bind-scheme"> 
+
+# &nbsp; Doping-driven delocalization
+
 </div>
 
+<div class="grid w-full h-fit grid-cols-3 grid-rows-1 mt-7 mb-auto">
+<div class="grid-item grid-col-span-2 mb-4.5"><img src="/images/doped_sym.svg" width=700/></div>
+<div class="grid-item grid-col-span-1 ml-15">
+<v-clicks at=0>
+
+  - We dope the Mott insulator found at $U/D=2.3$
+  - Both $E_{\langle ij \rangle}^\mathrm{hd}$ and $E_{\langle ij \rangle}^{\uparrow\downarrow}$ decrease in the bad metal up to $\delta\simeq0.2$
+  - The spin-singlet $E_{\langle ij \rangle}^{\uparrow\downarrow}$ vanishes in the normal Fermi liquid, while there is some residual $E_{\langle ij \rangle}^\mathrm{hd}$...
+
+</v-clicks>
+</div>
+<div class="grid-item grid-col-span-2 text-center h-fit">
+
+<hr/>
+
+Symmetry-resolved versus full entanglement between sites $\langle i j \rangle$
+
+</div>
+</div>
 
 ---
-layout: image-left
-image: /images/armitage_quanta.jpg
-class: mycoolclass
+layout: full
+title: Phase Diagram
+color: slate-light
 ---
 
-<br />
+<div class="neversink-slate-scheme ns-c-bind-scheme"> 
 
-# Image left
+# &nbsp; $(U\text{-}\mu)$ phase diagram in $E_{\langle ij \rangle}^\mathrm{hd}$ and $E_{\langle ij \rangle}^{\uparrow\downarrow}$
 
-This is the `layout: image-left` layout.
+</div>
 
----
-layout: image-right
-image: /images/armitage_quanta.jpg
-slide_info: false
-class: mycoolclass
----
+<div class="grid w-full h-fit grid-cols-2 grid-rows-1 mt-10 mb-auto">
+<div class="grid-item grid-col-span-1"><img src="/images/HDphases.svg" class="w-80 ml-15"/></div>
+<div class="grid-item grid-col-span-1"><img src="/images/RVBphases.svg" class="w-80 ml-15" /></div>
 
-# Image right
+</div>
 
-This is the `layout: image-right` layout.
 
----
-layout: image
-image: /images/armitage_quanta.jpg
-title: Image Layout
----
 
 
 ---
 layout: iframe-right
-title: iframe Right Layout
-# the web page source
-url: https://arxiv.org/html/2506.18709v1#abstract
+title: Advertisement
+url: 
+slide_info: true
+transition: view-transition
+---
 
-# a custom class name to the content
-class: my-cool-content-on-the-right
+# Experimental measures?
+
+<br/>
+
+<v-click>
+
+  Unfortunately hard to directly access it...
+
+  <br/>  
+
+</v-click>
+
+<v-click>
+
+  We **just announced on arxiv** an indirect witness of nonlocal quantum correlations  
+
+</v-click>
+
+<v-click>
+
+  ==**->** Easily measured in cold-atom lattices== 
+
+</v-click>
+  
+<v-click>
+
+  ==**->** Directly accessible in local theories== 
+
+  <br/>
+
+</v-click>
+
+<!-- <v-click>
+
+  Please read it, if interested! 🤠
+  <QRCode value="https://arxiv.org/html/2308.13706" :size="100" render-as='svg' class="float-right mr-7 mt-2"/>
+
+</v-click> -->
+
+
+---
+layout: iframe-right
+title: Web-View
+url: https://arxiv.org/html/2506.18709v1#abstract
 slide_info: false
 ---
 
-# This is a website on the right
+# Experimental measures?
 
-This is useful for showing a website but loads live on the web so requires and internet connection.
-
----
-layout: two-cols-title
-columns: is-6
-align: l-lt-lt
-title: Two Cols Title - Header (Info)
----
-
-:: title ::
-
-# `two-cols-title`
-
-:: left ::
-
-This is `layout: two-cols-title`. 
-
-- There are three slots: `:: title ::`, `:: left ::`, and `:: right ::` along with the default which is implicit before any named slots.
-
-- It additionally provides three configuration options in the slide YAML front matter:
-  `color`, `columns` and `align`.
-
-:: right ::
-
-- `color` is the color scheme.
-
-- `columns` is the relative spacing given to the left versus right column. The overall space is divided into 12 columns. Instructions like `is-5` will give 5 units to the left and 7 to the right.
-
-- The <code>align</code> parameter determines how the columns look. The notation is for example
-  <code>align: l-cm-cm</code>. The first part is for the header, the second for the left column, the third part is for the right column. The first letter is (<code>c</code> for center, <code>l</code> for left, <code>r</code> for right), the second letter
-  is vertical alignment (<code>t</code> for top, <code>m</code> for middle, <code>b</code> for bottom). Only c/l/r works for the header.
+<br/>
 
 
+
+  Unfortunately hard to directly access it...
+
+  <br/>  
+
+
+
+
+
+  We **just announced on arxiv** an indirect witness of nonlocal quantum correlations  
+
+
+
+
+
+  ==**->** Easily measured in cold-atom lattices== 
+
+
+
+  ==**->** Directly accessible in local theories== 
+
+  <br/>
+
+
+
+  Please read it, if interested! 🤠
+  <QRCode value="https://arxiv.org/html/2308.13706" :size="100" render-as='svg' class="float-right mr-7 mt-2"/>
 
 
 ---
-layout: side-title
-side: l
-color: violet
-titlewidth: is-4
-align: rm-lm
-title: Side Title Layout (Another)
+layout: image
+image: /images/ThankYou.svg
+slide_info: false
 ---
-
-:: title ::
-
-# `side-title`
-
-# <mdi-arrow-right />
-
-:: content ::
-
-This is `layout: side-title` with `side: left` in the front matter.
-
-```yaml
-side: left
-color: violet
-titlewidth: is-4
-align: rm-lm
-```
-
-
-
----
-layout: side-title
-side: r
-color: pink-light
-titlewidth: is-6
-align: lm-lb
-title: Side Title Layout (Another)
----
-
-:: title ::
- 
-# `side-title`
-
-# <mdi-arrow-right />
-
-:: content ::
-
-This is `layout: side-title` with `side: right` in the front matter.
-
-```yaml
-side: right
-color: pink-light
-titlewidth: is-6
-align: lm-lb
-```
-
-
-
-
----
-layout: default
----
-
-# Extras
-
-In addition to these custom layouts, the **Neversink** theme includes a few custom components that can be used in your slides. These include sticky notes, speech bubbles, cute icons, QR codes, and more.  The next few slides walks through them:
-
-<div class="ns-c-tight">
-
-- admonitions
-- sticky notes
-- speech bubbles
-- cute icons
-- QR codes
-</div>
-
----
-layout: two-cols-title
-columns: is-6
-title: Bubbles
----
-
-<SpeechBubble position="l" color='sky' shape="round"  v-drag="[83,364,274,109]">
-
-Hello, I'm a **speech bubble**! I'm a longer speech bubble. I'm still going.
-</SpeechBubble>
-
-:: title ::
-
-# Bubbles
-
-:: left ::
-
-- Bubbles are moveable elements that act as speech bubbles
-- They can be configured for where you want the arrow to point
-- The can be move around if you enable `v-drag` on the element
-
-:: right ::
-
-<SpeechBubble position="bl" color='amber-light' shape="round">
-
-Hello, I'm a **speech bubble**! I'm a longer speech bubble. I'm still going.
-Hello, I'm a **speech bubble**! I'm a longer speech bubble. I'm still going.
-Hello, I'm a **speech bubble**! I'm a longer speech bubble. I'm still going.
-</SpeechBubble>
-
----
-layout: default
-title: Sticky Notes
----
-
-<StickyNote color="amber-light" textAlign="left" width="180px" title="Title" v-drag="[66,318,185,171]">
-
-Hello, I'm a **sticky note**.
-</StickyNote>
-
-<StickyNote color="sky-light" textAlign="left" width="180px" title="This is my title" v-drag="[375,306,180,180,-15]">
-
-Hello, I'm also a **sticky note** but am blue sky title.
-</StickyNote>
-
-<StickyNote color="pink-light" textAlign="left" width="180px"  v-drag="[667,299,185,171,8]">
-
-Hello, I'm also a **sticky note** but I lack a title.
-</StickyNote>
-
-# Sticky Notes
-
-- Sticky notes are moveable elements you can use for notes.
-- Syntax is
-
-```js
-<StickyNote color="amber-light" textAlign="left" width="180px" title="Title" v-drag>
-  Hello, I'm a **sticky note**.
-</StickyNote>
-```
-
-
----
-layout: default
-title: QR Codes
----
-
-# In-line QR Codes
-
-- Send people to a url with a easy to configure QR code
-
-```vue
-<QRCode value="https://arxiv.org/abs/2308.13706" :size="200" render-as="svg" />
-```
-
-<br />
-Result:
-
-<QRCode value="https://arxiv.org/html/2308.13706" :size="200" render-as='svg'/>
-
-
-
----
-layout: default
-title: Lines
----
-
-# Lines
-
-<Line :x1=0 :y1=0 :x2=200 :y2=200 :width=2 color='red' v-drag="[326,136,250,250]" />
-
-
-
-
----
-layout: side-title
-side: left
-color: lime
-titlewidth: is-4
-align: rm-lt
-title: LaTeX Example
----
-
-:: title ::
-
-# <mdi-math-integral-box /> LaTeX Equations
-
-Yeah it does this fine
-
-<Mug :size="80" mood="excited" color="#FDA7DC" v-drag="[342,288,77,80]" />
-
-:: content ::
-
-Inline equations: $\sqrt{3x-1}+(1+x)^2$
-
-Block rendering:
-
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-Line highlighting with clicks!
-
-$$
-{1|3|all}
-\begin{array}{c}
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-\nabla \cdot \vec{\mathbf{B}} & = 0
-\end{array}
-$$
-
-
