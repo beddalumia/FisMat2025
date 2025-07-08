@@ -430,6 +430,6 @@ slide_info: false
 
 ---
 layout: image
-image: /images/ThankYou.svg
+image: /images/Venice.jpg
 slide_info: false
 ---
