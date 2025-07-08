@@ -7,3 +7,4 @@ dist
 components.d.ts
 pnpm-*.yaml
 vercel.json
+slides-export.pdf
